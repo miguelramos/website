@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  gh_token: '4e7dbe201705b41c992b9137a82407b26956f559',
+  gh_token: 'cec084d1e5eef9f1ee675418e9a7e03f4aa41708',
   github: 'https://api.github.com'
 };
 

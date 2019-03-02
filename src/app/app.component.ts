@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Observable } from 'rxjs';
-import { pluck } from 'rxjs/operators';
+import { pluck, mergeAll } from 'rxjs/operators';
 import {
   faMapMarkerAlt,
   faInfoCircle,
@@ -10,6 +10,7 @@ import {
 
 import { JsonSpec } from '@dev/rest';
 import { ProfileResourceInterface } from './app.typings';
+import { GithubService } from './services/github.service';
 import { ProfileService } from './services/profile.service';
 
 @Component({
@@ -23,9 +24,14 @@ export class AppComponent implements OnInit {
   public faMapMarkerAlt = faMapMarkerAlt;
   public profile$: Observable<JsonSpec<ProfileResourceInterface>>;
 
-  constructor(private readonly profileService: ProfileService) {}
+  constructor(
+    private readonly profileService: ProfileService,
+    private readonly githubService: GithubService
+  ) { }
 
   ngOnInit(): void {
     this.profile$ = this.profileService.getProfile().pipe(pluck('attributes'));
+
+    this.githubService.getStatistics().subscribe(response => console.dir(response));
   }
 }

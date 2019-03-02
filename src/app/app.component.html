@@ -103,6 +103,10 @@
   </nb-sidebar>
 
   <nb-layout-column>
+    <nb-layout-header [fixed]="false">
+      <!--<nb-card [nbSpinner]="loading" nbSpinnerStatus="danger"></nb-card>-->
+      <ngx-charts-area-chart [results]="activity$|async"></ngx-charts-area-chart>
+    </nb-layout-header>
     <router-outlet></router-outlet>
   </nb-layout-column>
 </nb-layout>

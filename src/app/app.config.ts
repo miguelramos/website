@@ -8,6 +8,12 @@ export const CONFIGURATION = {
     { HOST: environment.github, KEY: '@github' }
   ],
   ENDPOINTS: {
-    PROFILE: '@local:/assets/json/profile.json'
+    PROFILE: '@local:/assets/json/profile.json',
+    GITHUB: {
+      USER: '@github:/users/:user',
+      REPOS: '@github:/user/repos',
+      STATISTICS: '@github:/repos/:owner/:repo/stats/contributors',
+      EVENTS: '@github:/users/:user/events'
+    }
   }
 };
