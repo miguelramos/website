@@ -1,21 +1,108 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nb-layout *ngIf="(profile$ | async) as profile">
+  <nb-sidebar>
+    <nb-user
+      size="xlarge"
+      name="John Doe"
+      title="Engineer"
+      [picture]="profile.avatar"
+      onlyPicture
+    >
+    </nb-user>
+    <div class="profile">
+      <h1 class="profile__name">{{ profile.name }}</h1>
+      <h3 class="profile__username">{{ profile.username }}</h3>
+      <p class="profile__bio">{{ profile.bio }}</p>
+      <p>
+        <fa-icon [icon]="faMapMarkerAlt"></fa-icon
+        ><span class="profile__local">{{ profile.localization }}</span>
+      </p>
+      <p>
+        <fa-icon [icon]="faEnvelope"></fa-icon
+        ><span class="profile__email">{{ profile.email }}</span>
+      </p>
+    </div>
+    <hr />
+    <div class="skills">
+      <h2 class="skills__title">
+        <fa-icon [icon]="faInfoCircle"></fa-icon>
+        <span>{{ profile.skills.title }}</span>
+      </h2>
+      <p>
+        <nb-progress-bar [value]="profile.skills.js.value" size="sm">{{
+          profile.skills.js.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.skills.typescript.value" size="sm">{{
+          profile.skills.typescript.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.skills.sql.value" size="sm">{{
+          profile.skills.sql.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.skills.html.value" size="sm">{{
+          profile.skills.html.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.skills.scss.value" size="sm">{{
+          profile.skills.scss.name
+        }}</nb-progress-bar>
+      </p>
+    </div>
+    <hr />
+    <div class="libs">
+      <h2 class="skills__title">
+        <fa-icon [icon]="faInfoCircle"></fa-icon>
+        <span>{{ profile.libs.title }}</span>
+      </h2>
+      <p>
+        <nb-progress-bar [value]="profile.libs.angular.value" size="sm">{{
+          profile.libs.angular.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.libs.node.value" size="sm">{{
+          profile.libs.node.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.libs.rxjs.value" size="sm">{{
+          profile.libs.rxjs.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.libs.express.value" size="sm">{{
+          profile.libs.express.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.libs.nest.value" size="sm">{{
+          profile.libs.nest.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.libs.molecule.value" size="sm">{{
+          profile.libs.molecule.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.libs.react.value" size="sm">{{
+          profile.libs.react.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.libs.electron.value" size="sm">{{
+          profile.libs.electron.name
+        }}</nb-progress-bar>
+      </p>
+    </div>
+  </nb-sidebar>
 
-<router-outlet></router-outlet>
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+</nb-layout>

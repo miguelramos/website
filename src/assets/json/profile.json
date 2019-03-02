@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "type": "profile",
+      "id": "1",
+      "attributes": {
+        "name": "Miguel Ramos",
+        "username": "miguelramos",
+        "avatar": "assets/me.jpeg",
+        "bio": "NodeJS, Javascript, Python and Typescript. Love backend technologies and dedicated now as a frontend master.",
+        "localization": "Viana do Castelo, Portugal",
+        "email": "hello@miguelramos.dev",
+        "skills": {
+          "title": "Languages",
+          "js": {
+            "name": "JAVASCRIPT",
+            "value": 85
+          },
+          "typescript": {
+            "name": "TYPESCRIPT",
+            "value": 75
+          },
+          "sql": {
+            "name": "SQL",
+            "value": 70
+          },
+          "html": {
+            "name": "HTML5",
+            "value": 85
+          },
+          "scss": {
+            "name": "SCSS",
+            "value": 80
+          }
+        },
+        "libs": {
+          "title": "Skills",
+          "angular": {
+            "name": "ANGULAR",
+            "value": 85
+          },
+          "node": {
+            "name": "NODEJS",
+            "value": 85
+          },
+          "rxjs": {
+            "name": "RXJS",
+            "value": 80
+          },
+          "express": {
+            "name": "EXPRESS",
+            "value": 80
+          },
+          "nest": {
+            "name": "NESTJS",
+            "value": 80
+          },
+          "molecule": {
+            "name": "MOLECULEJS",
+            "value": 70
+          },
+          "react": {
+            "name": "REACTJS",
+            "value": 60
+          },
+          "electron": {
+            "name": "ELECTRON",
+            "value": 75
+          }
+        }
+      }
+    }
+  ]
+}

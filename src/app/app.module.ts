@@ -1,18 +1,42 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
+import {
+  NbThemeModule,
+  NbLayoutModule,
+  NbSidebarModule,
+  NbUserModule,
+  NbProgressBarModule
+} from '@nebular/theme';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+import { CONFIGURATION } from './app.config';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ConfigurationModule } from '@dev/configurator';
+import { ServicesModule } from './services/services.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({ name: 'default' }),
+    NbLayoutModule,
+    NbUserModule,
+    NbSidebarModule.forRoot(),
+    CommonModule,
+    HttpClientModule,
+    ConfigurationModule.forRoot(CONFIGURATION),
+    ServicesModule,
+    FontAwesomeModule,
+    NbProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

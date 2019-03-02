@@ -1,0 +1,23 @@
+:host {
+  position: relative;
+  display: block;
+
+  .profile {
+    &__name {
+      margin-bottom: 0.2rem;
+    }
+    &__username {
+      margin-top: 0;
+    }
+    &__local,
+    &__email {
+      margin-left: 0.2rem;
+    }
+  }
+
+  .skills {
+    &__title span {
+      margin-left: 0.2rem;
+    }
+  }
+}
