@@ -10,7 +10,8 @@ import {
   NbSidebarModule,
   NbUserModule,
   NbProgressBarModule,
-  NbSpinnerModule
+  NbSpinnerModule,
+  NbCardModule
 } from '@nebular/theme';
 import { AreaChartModule } from '@swimlane/ngx-charts';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -38,7 +39,8 @@ import { ServicesModule } from './services/services.module';
     FontAwesomeModule,
     NbProgressBarModule,
     AreaChartModule,
-    NbSpinnerModule
+    NbSpinnerModule,
+    NbCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

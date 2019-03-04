@@ -5,7 +5,8 @@ export const CONFIGURATION = {
   DEFAULT_LANG: 'pt',
   DOMAINS_API: [
     { HOST: '', KEY: '@local' },
-    { HOST: environment.github, KEY: '@github' }
+    { HOST: environment.github, KEY: '@github' },
+    { HOST: environment.gitlab, KEY: '@gitlab' }
   ],
   ENDPOINTS: {
     PROFILE: '@local:/assets/json/profile.json',
@@ -14,6 +15,9 @@ export const CONFIGURATION = {
       REPOS: '@github:/user/repos',
       STATISTICS: '@github:/repos/:owner/:repo/stats/contributors',
       EVENTS: '@github:/users/:user/events'
+    },
+    GITLAB: {
+      EVENTS: '@gitlab:/users/:id/events'
     }
   }
 };

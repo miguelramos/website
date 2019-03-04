@@ -23,15 +23,18 @@ export class AppComponent implements OnInit {
   public faEnvelope = faEnvelopeOpenText;
   public faMapMarkerAlt = faMapMarkerAlt;
   public profile$: Observable<JsonSpec<ProfileResourceInterface>>;
+  public activity$: Observable<
+    { name: string; series: { name: string; value: number }[] }[]
+  >;
 
   constructor(
     private readonly profileService: ProfileService,
     private readonly githubService: GithubService
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.profile$ = this.profileService.getProfile().pipe(pluck('attributes'));
 
-    this.githubService.getStatistics().subscribe(response => console.dir(response));
+    this.activity$ = this.githubService.getStatistics();
   }
 }

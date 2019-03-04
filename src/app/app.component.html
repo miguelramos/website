@@ -104,8 +104,13 @@
 
   <nb-layout-column>
     <nb-layout-header [fixed]="false">
-      <!--<nb-card [nbSpinner]="loading" nbSpinnerStatus="danger"></nb-card>-->
-      <ngx-charts-area-chart [results]="activity$|async"></ngx-charts-area-chart>
+      <ng-template #loading>
+        <nb-card [nbSpinner]="true" nbSpinnerStatus="danger"></nb-card>
+      </ng-template>
+      <!---->
+      <ng-container *ngIf="(activity$ | async) as activity; else loading">
+        <ngx-charts-area-chart [results]="activity"></ngx-charts-area-chart>
+      </ng-container>
     </nb-layout-header>
     <router-outlet></router-outlet>
   </nb-layout-column>

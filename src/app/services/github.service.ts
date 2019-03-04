@@ -3,7 +3,14 @@ import { HttpClient } from '@angular/common/http';
 
 import { UrlService } from '@dev/rest';
 import { environment } from '@dev/env/environment';
-import { concatMap, catchError, filter, take, toArray, map } from 'rxjs/operators';
+import {
+  concatMap,
+  catchError,
+  filter,
+  take,
+  toArray,
+  map
+} from 'rxjs/operators';
 import { of, from } from 'rxjs';
 
 @Injectable()
@@ -11,7 +18,7 @@ export class GithubService {
   constructor(
     @Inject(UrlService) private readonly urlService: UrlService,
     @Inject(HttpClient) private readonly httpService: HttpClient
-  ) { }
+  ) {}
 
   getHeaders() {
     return { headers: { Authorization: `token ${environment.gh_token}` } };
@@ -30,14 +37,25 @@ export class GithubService {
   }
 
   getStatistics() {
-
     return this.getRepos().pipe(
-      concatMap((response: { name: string, owner: {login: string} }[]) => from(response)),
+      concatMap((response: { name: string; owner: { login: string } }[]) =>
+        from(response)
+      ),
       concatMap(repo => {
-        const url = this.urlService.get('GITHUB.STATISTICS', { owner: repo.owner.login, repo: repo.name });
+        const url = this.urlService.get('GITHUB.STATISTICS', {
+          owner: repo.owner.login,
+          repo: repo.name
+        });
 
         return this.httpService.get(url, this.getHeaders()).pipe(
-          concatMap((response: {author: {login: string, id: number}, total: number}[]) => from(response)),
+          concatMap(
+            (
+              response: {
+                author: { login: string; id: number };
+                total: number;
+              }[]
+            ) => from(response)
+          ),
           filter(value => {
             return value.author.login === 'miguelramos' ? true : false;
           }),
@@ -50,11 +68,13 @@ export class GithubService {
           name: 'Github',
           series: []
         };
-
         serie.series = collection.map(
-          (item: { author: { login: string, id: number }, total: number }) => {
+          (
+            item: { author: { login: string; id: number }; total: number },
+            idx
+          ) => {
             if (item && item.author) {
-              return { name: item.author.id, value: item.total };
+              return { name: idx, value: item.total };
             }
           }
         );
