@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Observable } from 'rxjs';
-import { pluck, mergeAll } from 'rxjs/operators';
+import { Observable, forkJoin, of } from 'rxjs';
+import { pluck, mergeAll, flatMap } from 'rxjs/operators';
 import {
   faMapMarkerAlt,
   faInfoCircle,
@@ -11,6 +11,7 @@ import {
 import { JsonSpec } from '@dev/rest';
 import { ProfileResourceInterface } from './app.typings';
 import { GithubService } from './services/github.service';
+import { GitlabService } from './services/gitlab.service';
 import { ProfileService } from './services/profile.service';
 
 @Component({
@@ -29,12 +30,18 @@ export class AppComponent implements OnInit {
 
   constructor(
     private readonly profileService: ProfileService,
-    private readonly githubService: GithubService
+    private readonly githubService: GithubService,
+    private readonly gitlabService: GitlabService
   ) {}
 
   ngOnInit(): void {
     this.profile$ = this.profileService.getProfile().pipe(pluck('attributes'));
 
-    this.activity$ = this.githubService.getStatistics();
+    this.activity$ = forkJoin(
+      this.githubService.getStatistics(),
+      this.gitlabService.getEvents()
+    ).pipe(
+      flatMap(args => of([].concat(args[0], args[1])))
+    );
   }
 }

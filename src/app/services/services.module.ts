@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { GithubService } from './github.service';
 import { ProfileService } from './profile.service';
 import { RestModule, UrlService, RestHttpService } from '@dev/rest';
+import { GitlabService } from './gitlab.service';
 
 @NgModule({
   imports: [RestModule],
@@ -16,6 +17,11 @@ import { RestModule, UrlService, RestHttpService } from '@dev/rest';
     {
       provide: GithubService,
       useClass: GithubService,
+      deps: [UrlService, HttpClient]
+    },
+    {
+      provide: GitlabService,
+      useClass: GitlabService,
       deps: [UrlService, HttpClient]
     }
   ]

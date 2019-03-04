@@ -15,8 +15,15 @@
       },
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "./tools/webpack/config.js",
+              "mergeStrategies": {
+                "loaders": "replace"
+              },
+              "replaceDuplicatePlugins": true
+            },
             "outputPath": "dist/personal-website",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -55,7 +62,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/dev-server:generic",
           "options": {
             "browserTarget": "personal-website:build"
           },
