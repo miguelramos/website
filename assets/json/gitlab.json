@@ -1,0 +1,73 @@
+{
+  "name": "Gitlab",
+  "series": [
+    {
+      "name": 0,
+      "value": 1
+    },
+    {
+      "name": 2,
+      "value": 1
+    },
+    {
+      "name": 3,
+      "value": 1
+    },
+    {
+      "name": 4,
+      "value": 1
+    },
+    {
+      "name": 5,
+      "value": 17
+    },
+    {
+      "name": 6,
+      "value": 1
+    },
+    {
+      "name": 7,
+      "value": 1
+    },
+    {
+      "name": 9,
+      "value": 1
+    },
+    {
+      "name": 11,
+      "value": 15
+    },
+    {
+      "name": 12,
+      "value": 7
+    },
+    {
+      "name": 13,
+      "value": 1
+    },
+    {
+      "name": 14,
+      "value": 1
+    },
+    {
+      "name": 15,
+      "value": 1
+    },
+    {
+      "name": 16,
+      "value": 1
+    },
+    {
+      "name": 17,
+      "value": 1
+    },
+    {
+      "name": 18,
+      "value": 3
+    },
+    {
+      "name": 19,
+      "value": 2
+    }
+  ]
+}
