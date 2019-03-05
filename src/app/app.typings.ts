@@ -12,3 +12,12 @@ export interface ProfileResourceInterface {
     };
   };
 }
+
+export interface ProfessionalResourceInterface {
+  from: string;
+  to: string;
+  company: string;
+  description: string;
+  tasks: string[];
+  tecs: string[];
+}

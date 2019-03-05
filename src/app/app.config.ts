@@ -18,6 +18,7 @@ export const CONFIGURATION = {
     },
     GITLAB: {
       EVENTS: '@gitlab:/users/:id/events'
-    }
+    },
+    PROFESSIONAL: '@local:/assets/json/professional.json'
   }
 };

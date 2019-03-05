@@ -1,0 +1,90 @@
+{
+  "data": [
+    {
+      "type": "path",
+      "id": 1,
+      "attributes": {
+        "from": "2018",
+        "to": "Current",
+        "company": "NQDA",
+        "description": "Javascript developer and mentorship. Project consulter",
+        "tasks": ["Mentoring team", "Agile", "Frontend Developer"],
+        "tecs": ["Typescript", "NodeJS", "Angular", "Git", "Javascript"]
+      }
+    },
+    {
+      "type": "path",
+      "id": 2,
+      "attributes": {
+        "from": "2016",
+        "to": "2018",
+        "company": "Foursource",
+        "description": "Team Leader and FrontEnd developer. Start from 0 the actual platform for B2B on textil environment. Creation of the social/business platform, internal CRM and company website.",
+        "tasks": ["Team Leader", "Agile", "Frontend Developer"],
+        "tecs": ["Typescript", "Rest", "Angular", "Redux", "Javascript"]
+      }
+    },
+    {
+      "type": "path",
+      "id": 3,
+      "attributes": {
+        "from": "2015",
+        "to": "2016",
+        "company": "Yieldify",
+        "description": "Team Leader: NodeJS/Python developer. Core developer and analytics. Scrum and agile methodologies. Responsable for the initial development of self service platform to generate adds.",
+        "tasks": [
+          "Team Leader",
+          "Rest API",
+          "Backend Developer",
+          "Frontend Developer",
+          "Agile",
+          "Design Sprint"
+        ],
+        "tecs": ["Express", "NodeJS", "Python", "Postgres", "Angular", "AWS"]
+      }
+    },
+    {
+      "type": "path",
+      "id": 4,
+      "attributes": {
+        "from": "2014",
+        "to": "2015",
+        "company": "Edigma",
+        "description": "Senior Web Developer: PHP/Javascript developer. Core developer of tools to the company and project consulting",
+        "tasks": ["Backend Developer", "Frontend Developer", "Full stack"],
+        "tecs": [
+          "PHP5",
+          "NodeJS",
+          "jQuery",
+          "Sass",
+          "HTML5",
+          "Gulp",
+          "Composer",
+          "Symfony"
+        ]
+      }
+    },
+    {
+      "type": "path",
+      "id": 5,
+      "attributes": {
+        "from": "2008",
+        "to": "2014",
+        "company": "IHAC",
+        "description": "Developer Master Responsible: Developer, leader and responsible for informatics department.",
+        "tasks": ["Web Developer", "Consulting"],
+        "tecs": [
+          "PHP5",
+          "CSS3",
+          "jQuery",
+          "Sass",
+          "HTML5",
+          "SQL",
+          "Composer",
+          "Laravel",
+          "Django"
+        ]
+      }
+    }
+  ]
+}

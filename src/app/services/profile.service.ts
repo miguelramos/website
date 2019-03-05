@@ -3,7 +3,10 @@ import { Injectable, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { ProfileResourceInterface } from '../app.typings';
+import {
+  ProfileResourceInterface,
+  ProfessionalResourceInterface
+} from '../app.typings';
 import { UrlService, RestHttpService, JsonSpec } from '@dev/rest';
 
 @Injectable()
@@ -20,6 +23,16 @@ export class ProfileService {
       .get<ProfileResourceInterface>(url)
       .pipe(map(response => response.data[0])) as Observable<
       JsonSpec<ProfileResourceInterface>
+    >;
+  }
+
+  getProfessional() {
+    const url = this.urlService.get('PROFESSIONAL');
+
+    return this.restService
+      .get<ProfessionalResourceInterface>(url)
+      .pipe(map(response => response.data)) as Observable<
+      JsonSpec<ProfessionalResourceInterface>[]
     >;
   }
 }
