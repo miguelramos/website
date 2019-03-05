@@ -40,9 +40,15 @@ export class GitlabService {
               }
             })
             .filter(value => value !== undefined);
-
+          console.dir(serie);
           return [serie];
         })
       );
+  }
+
+  getStatic() {
+    const url = this.urlService.get('GITLAB.STATIC');
+
+    return this.httpService.get(url);
   }
 }

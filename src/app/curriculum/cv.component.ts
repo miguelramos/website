@@ -29,8 +29,8 @@ export class CvComponent implements OnInit {
 
   ngOnInit(): void {
     this.activity$ = forkJoin(
-      this.githubService.getStatistics(),
-      this.gitlabService.getEvents()
+      this.githubService.getStatic(),
+      this.gitlabService.getStatic()
     ).pipe(
       tap(() => (this.loading = false)),
       flatMap(args => of([].concat(args[0], args[1])))

@@ -1,8 +1,8 @@
 export const environment = {
   production: true,
-  gh_token: process.env.GH_TOKEN,
+  gh_token: undefined,
   github: 'https://api.github.com',
-  gl_token: process.env.GL_TOKEN,
+  gl_token: undefined,
   gitlab: 'https://gitlab.com/api/v4',
-  gl_id: process.env.GL_ID
+  gl_id: undefined
 };

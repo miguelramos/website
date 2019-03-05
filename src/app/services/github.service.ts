@@ -78,10 +78,16 @@ export class GithubService {
             }
           }
         );
-
+        console.dir(serie);
         return [serie];
       })
     );
+  }
+
+  getStatic() {
+    const url = this.urlService.get('GITHUB.STATIC');
+
+    return this.httpService.get(url);
   }
 
   getEvents() {
