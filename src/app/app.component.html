@@ -103,15 +103,6 @@
   </nb-sidebar>
 
   <nb-layout-column>
-    <nb-layout-header [fixed]="false">
-      <ng-template #loading>
-        <nb-card [nbSpinner]="true" nbSpinnerStatus="danger"></nb-card>
-      </ng-template>
-      <!---->
-      <ng-container *ngIf="(activity$ | async) as activity; else loading">
-        <ngx-charts-area-chart [results]="activity"></ngx-charts-area-chart>
-      </ng-container>
-    </nb-layout-header>
     <router-outlet></router-outlet>
   </nb-layout-column>
 </nb-layout>

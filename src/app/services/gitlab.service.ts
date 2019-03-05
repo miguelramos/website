@@ -22,14 +22,24 @@ export class GitlabService {
     const { assign } = Object;
 
     return this.httpService
-      .get(url, assign({}, { params: { action: 'pushed' } }, this.getHeaders())).pipe(
-        map((response: {push_data: {commit_count: number}}[]) => {
+      .get(url, assign({}, { params: { action: 'pushed' } }, this.getHeaders()))
+      .pipe(
+        map((response: { push_data: { commit_count: number } }[]) => {
           const serie = {
             name: 'Gitlab',
             series: []
           };
 
-          serie.series = response.map((item, idx) => ({ name: idx, value: item.push_data.commit_count }));
+          serie.series = response
+            .map((item, idx) => {
+              if (item.push_data.commit_count > 0) {
+                return {
+                  name: idx,
+                  value: item.push_data.commit_count
+                };
+              }
+            })
+            .filter(value => value !== undefined);
 
           return [serie];
         })

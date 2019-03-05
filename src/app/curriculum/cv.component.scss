@@ -6,17 +6,17 @@ $dot-diameter: 24px;
 
 :host {
   .timeline {
-    width: 100%;
-    max-width: 800px;
-    background: #fff;
-    padding: 100px 50px;
+    //width: 100%;
+    //max-width: 800px;
+    //background: #fff;
+    //padding: 100px 50px;
     position: relative;
-    box-shadow: $container-shadow;
+    //box-shadow: $container-shadow;
     &:before {
       content: '';
       position: absolute;
       top: 0px;
-      left: calc(33% + 15px); //$gutter/2
+      left: calc(10% + 15px); //$gutter/2
       bottom: 0px;
       width: $border-width;
       background: #ddd;
@@ -35,7 +35,7 @@ $dot-diameter: 24px;
     .title {
       margin-bottom: 0.5em;
       float: left;
-      width: 33%;
+      width: 10%;
       padding-right: $gutter;
       text-align: right;
       position: relative;
@@ -63,7 +63,7 @@ $dot-diameter: 24px;
     .body {
       margin: 0 0 3em;
       float: right;
-      width: 66%;
+      width: 89%;
       padding-left: $gutter;
       p {
         line-height: 1.4em;
@@ -81,6 +81,12 @@ $dot-diameter: 24px;
           margin-right: 0.5em;
         }
       }
+    }
+  }
+
+  .activity {
+    &__body {
+      padding: 0;
     }
   }
 }

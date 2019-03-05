@@ -24,24 +24,10 @@ export class AppComponent implements OnInit {
   public faEnvelope = faEnvelopeOpenText;
   public faMapMarkerAlt = faMapMarkerAlt;
   public profile$: Observable<JsonSpec<ProfileResourceInterface>>;
-  public activity$: Observable<
-    { name: string; series: { name: string; value: number }[] }[]
-  >;
 
-  constructor(
-    private readonly profileService: ProfileService,
-    private readonly githubService: GithubService,
-    private readonly gitlabService: GitlabService
-  ) {}
+  constructor(private readonly profileService: ProfileService) {}
 
   ngOnInit(): void {
     this.profile$ = this.profileService.getProfile().pipe(pluck('attributes'));
-
-    this.activity$ = forkJoin(
-      this.githubService.getStatistics(),
-      this.gitlabService.getEvents()
-    ).pipe(
-      flatMap(args => of([].concat(args[0], args[1])))
-    );
   }
 }

@@ -9,11 +9,8 @@ import {
   NbLayoutModule,
   NbSidebarModule,
   NbUserModule,
-  NbProgressBarModule,
-  NbSpinnerModule,
-  NbCardModule
+  NbProgressBarModule
 } from '@nebular/theme';
-import { AreaChartModule } from '@swimlane/ngx-charts';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { CONFIGURATION } from './app.config';
@@ -37,10 +34,7 @@ import { ServicesModule } from './services/services.module';
     ConfigurationModule.forRoot(CONFIGURATION),
     ServicesModule,
     FontAwesomeModule,
-    NbProgressBarModule,
-    AreaChartModule,
-    NbSpinnerModule,
-    NbCardModule,
+    NbProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

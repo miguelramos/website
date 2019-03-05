@@ -1,4 +1,4 @@
-<div class="timeline">
+<!--<div class="timeline">
   <div class="entry">
     <div class="title">
       <h3>2014 - Present</h3>
@@ -87,4 +87,121 @@
       </ul>
     </div>
   </div>
-</div>
+</div>-->
+<nb-card
+  accent="info"
+  [nbSpinner]="loading"
+  nbSpinnerStatus="danger"
+  class="activity"
+>
+  <nb-card-header>Github and Gitlab Activity</nb-card-header>
+  <nb-card-body class="activity__body">
+    <ng-container *ngIf="(activity$ | async) as activity">
+      <ngx-charts-area-chart
+        [results]="activity"
+        [autoScale]="true"
+        [showGridLines]="false"
+        [trimXAxisTicks]="false"
+        [trimYAxisTicks]="false"
+        [customColors]="[
+          { name: 'Github', value: '#4ca6ff' },
+          { name: 'Gitlab', value: '#ffa100' }
+        ]"
+      ></ngx-charts-area-chart>
+    </ng-container>
+  </nb-card-body>
+</nb-card>
+
+<nb-card accent="success">
+  <nb-card-header>Professional Path</nb-card-header>
+  <nb-card-body class="timeline">
+    <div class="entry">
+      <div class="title">
+        <h3>2014 - Present</h3>
+        <p>Title, Company</p>
+      </div>
+      <div class="body">
+        <p>
+          Voluptatibus veniam ea reprehenderit atque reiciendis non laborum
+          adipisci ipsa pariatur omnis.
+        </p>
+        <ul>
+          <li>Rerum sit libero possimus amet excepturi</li>
+          <li>
+            Exercitationem enim dolores sunt praesentium dolorum praesentium
+          </li>
+          <li>
+            Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt
+            illo
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="title">
+        <h3>2010 - Present</h3>
+        <p>Title, Company</p>
+      </div>
+      <div class="body">
+        <p>
+          Voluptatibus veniam ea reprehenderit atque reiciendis non laborum
+          adipisci ipsa pariatur omnis.
+        </p>
+        <ul>
+          <li>Rerum sit libero possimus amet excepturi</li>
+          <li>
+            Exercitationem enim dolores sunt praesentium dolorum praesentium
+          </li>
+          <li>
+            Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt
+            illo
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="title">
+        <h3>2009 - 2010</h3>
+        <p>Title, Company</p>
+      </div>
+      <div class="body">
+        <p>
+          Voluptatibus veniam ea reprehenderit atque reiciendis non laborum
+          adipisci ipsa pariatur omnis.
+        </p>
+        <ul>
+          <li>Rerum sit libero possimus amet excepturi</li>
+          <li>
+            Exercitationem enim dolores sunt praesentium dolorum praesentium
+          </li>
+          <li>
+            Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt
+            illo
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="title">
+        <h3>2006 - 2008</h3>
+        <p>Title, Company</p>
+      </div>
+      <div class="body">
+        <p>
+          Voluptatibus veniam ea reprehenderit atque reiciendis non laborum
+          adipisci ipsa pariatur omnis.
+        </p>
+        <ul>
+          <li>Rerum sit libero possimus amet excepturi</li>
+          <li>
+            Exercitationem enim dolores sunt praesentium dolorum praesentium
+          </li>
+          <li>
+            Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt
+            illo
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>
