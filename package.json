@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "npx angular-cli-ghpages --dir=dist/personal-website --no-dotfiles --branch=master --no-silent --repo=https://GH_TOKEN@github.com/miguelramos/website.git --name=\"Miguel Ramos\" --email=miguel.marques.ramos@gmail.com"
+    "deploy": "npx angular-cli-ghpages --dir=dist/personal-website --no-dotfiles --no-silent --repo=https://GH_TOKEN@github.com/miguelramos/website.git --name=\"Miguel Ramos\" --email=miguel.marques.ramos@gmail.com"
   },
   "private": true,
   "dependencies": {
