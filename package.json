@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "npx angular-cli-ghpages --dir=dist/personal-website --no-dotfiles"
+    "deploy": "npx angular-cli-ghpages --dir=dist/personal-website --no-dotfiles --branch=master"
   },
   "private": true,
   "dependencies": {
