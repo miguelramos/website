@@ -20,6 +20,24 @@
         <fa-icon [icon]="faEnvelope"></fa-icon
         ><span class="profile__email">{{ profile.email }}</span>
       </p>
+      <p>
+        <fa-icon [icon]="faGithub"></fa-icon
+        ><a [href]="profile.contacts.github" class="profile__email">Github</a>
+      </p>
+      <p>
+        <fa-icon [icon]="faGitlab"></fa-icon
+        ><a [href]="profile.contacts.gitlab" class="profile__email">Gitlab</a>
+      </p>
+      <p>
+        <fa-icon [icon]="faTwitter"></fa-icon
+        ><a [href]="profile.contacts.twitter" class="profile__email">Twitter</a>
+      </p>
+      <p>
+        <fa-icon [icon]="faLinkedin"></fa-icon
+        ><a [href]="profile.contacts.linkedin" class="profile__email"
+          >Linkedin</a
+        >
+      </p>
     </div>
     <hr />
     <div class="skills">
@@ -97,6 +115,74 @@
       <p>
         <nb-progress-bar [value]="profile.libs.electron.value" size="sm">{{
           profile.libs.electron.name
+        }}</nb-progress-bar>
+      </p>
+    </div>
+    <hr />
+    <div class="tools">
+      <h2 class="tools__title">
+        <fa-icon [icon]="faInfoCircle"></fa-icon>
+        <span>{{ profile.tools.title }}</span>
+      </h2>
+      <p>
+        <nb-progress-bar [value]="profile.tools.tape.value" size="sm">{{
+          profile.tools.tape.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.tools.jasmine.value" size="sm">{{
+          profile.tools.jasmine.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.tools.jest.value" size="sm">{{
+          profile.tools.jest.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.tools.protactor.value" size="sm">{{
+          profile.tools.protactor.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.tools.cypress.value" size="sm">{{
+          profile.tools.cypress.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.tools.gulp.value" size="sm">{{
+          profile.tools.gulp.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.tools.webpack.value" size="sm">{{
+          profile.tools.webpack.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.tools.schematics.value" size="sm">{{
+          profile.tools.schematics.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.tools.rxjs.value" size="sm">{{
+          profile.tools.rxjs.name
+        }}</nb-progress-bar>
+      </p>
+    </div>
+    <div class="tools">
+      <h2 class="tools__title">
+        <fa-icon [icon]="faInfoCircle"></fa-icon>
+        <span>{{ profile.languages.title }}</span>
+      </h2>
+      <p>
+        <nb-progress-bar [value]="profile.languages.pt.value" size="sm">{{
+          profile.languages.pt.name
+        }}</nb-progress-bar>
+      </p>
+      <p>
+        <nb-progress-bar [value]="profile.languages.en.value" size="sm">{{
+          profile.languages.en.name
         }}</nb-progress-bar>
       </p>
     </div>

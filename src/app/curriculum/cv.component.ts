@@ -15,6 +15,7 @@ import { ProfessionalResourceInterface } from '../app.typings';
 })
 export class CvComponent implements OnInit {
   public loading = true;
+  public loadingPro = true;
   public activity$: Observable<
     { name: string; series: { name: string; value: number }[] }[]
   >;
@@ -35,6 +36,8 @@ export class CvComponent implements OnInit {
       flatMap(args => of([].concat(args[0], args[1])))
     );
 
-    this.professional$ = this.profileService.getProfessional();
+    this.professional$ = this.profileService
+      .getProfessional()
+      .pipe(tap(() => (this.loadingPro = false)));
   }
 }

@@ -11,7 +11,7 @@
         "localization": "Viana do Castelo, Portugal",
         "email": "hello@miguelramos.dev",
         "skills": {
-          "title": "Languages",
+          "title": "Professional",
           "js": {
             "name": "JAVASCRIPT",
             "value": 85
@@ -67,6 +67,62 @@
             "name": "ELECTRON",
             "value": 75
           }
+        },
+        "tools": {
+          "title": "Tools",
+          "tape": {
+            "name": "TAPE",
+            "value": 75
+          },
+          "jasmine": {
+            "name": "JASMINE",
+            "value": 80
+          },
+          "jest": {
+            "name": "JEST",
+            "value": 80
+          },
+          "protactor": {
+            "name": "PROTACTOR",
+            "value": 70
+          },
+          "cypress": {
+            "name": "CYPRESS",
+            "value": 70
+          },
+          "gulp": {
+            "name": "GULP",
+            "value": 80
+          },
+          "webpack": {
+            "name": "WEBPACK",
+            "value": 70
+          },
+          "schematics": {
+            "name": "SCHEMATICS",
+            "value": 60
+          },
+          "rxjs": {
+            "name": "RXJS",
+            "value": 75
+          }
+        },
+        "languages": {
+          "title": "Languages",
+          "pt": {
+            "name": "Protuguese",
+            "value": 99
+          },
+          "en": {
+            "name": "English",
+            "value": 80
+          }
+        },
+        "contacts": {
+          "github": "https://github.com/miguelramos",
+          "gitlab": "https://gitlab.com/miguel.ramos",
+          "twitter": "https://twitter.com/miguelonspring",
+          "linkedin": "https://www.linkedin.com/in/miguelmarquesramos/"
         }
       }
     }
