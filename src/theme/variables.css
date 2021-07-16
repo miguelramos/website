@@ -1,0 +1,18 @@
+:root {
+  --ui-h1-size: theme('fontSize.2xl');
+  --ui-h1-height: theme('lineHeight.8');
+  --ui-color-transparent: theme('backgroundColor.transparent');
+  --ui-color-primary: theme('colors.blue.500');
+  --ui-color-secondary: theme('colors.purple.400');
+  --ui-color-tertiary: theme('colors.green.500');
+  --ui-color-success: theme('colors.green.400');
+  --ui-color-error: theme('colors.red.400');
+  --ui-color-danger: theme('colors.red.400');
+  --ui-color-warning: theme('colors.yellow.400');
+  --ui-color-info: theme('colors.blue.400');
+  --ui-color-white: theme('colors.white');
+  --ui-color-black: theme('colors.gray.800');
+  --ui-color-gray: theme('colors.gray.400');
+  --ui-color-default: theme('colors.gray.200');
+  --ui-text-color: theme('colors.gray.800');
+}
