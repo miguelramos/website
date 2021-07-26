@@ -1,0 +1,237 @@
+{
+   "data":{
+      "personal": {
+         "avatar": "/assets/me.png",
+         "name": "Miguel Ramos",
+         "title": "Web Developer",
+         "sentence": "Javascript, typescript and Go"
+      },
+      "contacts": [
+         {
+            "id": 1,
+            "link": "https://github.com/miguelramos",
+            "title": "Github link",
+            "icon": "/assets/icons/github.svg"
+         },
+         {
+            "id": 2,
+            "link": "https://www.linkedin.com/in/miguelmarquesramos",
+            "title": "Linkedin link",
+            "icon": "/assets/icons/linkedin.svg"
+         },
+         {
+            "id": 3,
+            "link": "https://twitter.com/miguelonspring",
+            "title": "Twitter link",
+            "icon": "/assets/icons/twitter.svg"
+         },
+         {
+            "id": 4,
+            "link": "mailto:hello@miguelramos.dev",
+            "title": "Mail link",
+            "icon": "/assets/icons/mail.svg"
+         }
+      ],
+      "person":[
+         {
+            "id":1,
+            "label":"Residence",
+            "value":"Portugal"
+         },
+         {
+            "id":2,
+            "label":"City",
+            "value":"Viana do Castelo"
+         },
+         {
+            "id":3,
+            "label":"Age",
+            "value":"44"
+         }
+      ],
+      "languages":{
+         "collection":[
+            {
+               "amount":100,
+               "deegre":180,
+               "id":1,
+               "label":"Portuguese"
+            },
+            {
+               "amount":75,
+               "deegre":125,
+               "id":2,
+               "label":"English"
+            }
+         ],
+         "title":"Languages"
+      },
+      "skills":{
+         "collection":[
+            {
+               "amount":80,
+               "id":1,
+               "label":"Typescript"
+            },
+            {
+               "amount":85,
+               "id":2,
+               "label":"Javascript"
+            },
+            {
+               "amount":80,
+               "id":3,
+               "label":"Css"
+            },
+            {
+               "amount":80,
+               "id":4,
+               "label":"Html"
+            },
+            {
+               "amount":20,
+               "id":5,
+               "label":"Go (Learning)"
+            },
+            {
+               "amount":75,
+               "id":6,
+               "label":"Git"
+            },
+            {
+               "amount":60,
+               "id":7,
+               "label":"Sql"
+            },
+            {
+               "amount":85,
+               "id":8,
+               "label":"Nodejs"
+            }
+         ],
+         "title":"Coding"
+      },
+      "knowledge":{
+         "collection":[
+            {
+               "description":"Angular, Vue and React",
+               "id":1
+            },
+            {
+               "description":"Fiber, Cobra, Electron",
+               "id":2
+            },
+            {
+               "description":"Nestjs, Express, Lodash",
+               "id":3
+            },
+            {
+               "description":"Tailwind, Scss, Bulma",
+               "id":4
+            },
+            {
+               "description":"Scrum, Kanban, Mentoring",
+               "id":5
+            },
+            {
+               "description":"Tooling, Monorepo, Docker",
+               "id":6
+            }
+         ],
+         "title":"Knowledge"
+      },
+      "hero":{
+         "description":"Web developer",
+         "info":"Welcome to my website",
+         "sentences":[
+            "I Love to Develop.",
+            "Creating products and solutions.",
+            "Team player and open mind.",
+            "Mentoring, learning and grow.",
+            "Self-taught, humble and always ready to learn.",
+            "Open source enthusiastic, contributor and creator."
+         ],
+         "title":"Hello, i'm Miguel Ramos"
+      },
+      "experience":[
+         {
+            "id":1,
+            "label":"Years Experience",
+            "year":"14+"
+         },
+         {
+            "id":2,
+            "label":"Products Builded",
+            "year":"10+"
+         },
+         {
+            "id":3,
+            "label":"Years Mentoring",
+            "year":"2+"
+         },
+         {
+            "id":4,
+            "label":"Always Learning",
+            "year":"♾+"
+         }
+      ],
+      "resume":[
+         {
+            "description":"Senior javascript developer, focus in internal tools. Practices implementations, tooling and frontend development in internal products.",
+            "id":1,
+            "info":"Senior Frontend Developer",
+            "time":"01-May-2020 / Until now",
+            "title":"Prozis"
+         },
+         {
+            "description":"Developed electron application for IPVC. Leadership and management team. Mentoring sessions and company methodologies definition.",
+            "id":2,
+            "info":"Senior Leader",
+            "time":"01-Aug-2018 / 01-April-2020",
+            "title":"Untile (NQDA)"
+         },
+         {
+            "description":"Startup from day one, build and conceptualization of all product application on frontend.",
+            "id":3,
+            "info":"Team Leader Developer",
+            "time":"01-Oct-2016 / 01-July-2018",
+            "title":"Foursource"
+         },
+         {
+            "description":"Here started as Python developer to refactor processes. Build rest application for A/B testing on referal Ads. Jumped to team leader for frontend team building the new platform",
+            "id":4,
+            "info":"Team Leader Developer",
+            "time":"01-Apr-2015 / 01-Aug-2016",
+            "title":"Yeldify"
+         },
+         {
+            "description":"Edigma created arts rest platform on PHP and also frontend. Several shopping carts. Milenium publicity system and internal application to report time tracking.",
+            "id":5,
+            "info":"Full Stack Developer",
+            "time":"01-Feb-2014 / 01-Feb-2015",
+            "title":"Edigma"
+         },
+         {
+            "description":"On IHAC Institue developed several web applications in PHP like: documents organization search by year, localization, name, type, etc. Also museum presentation system, ticket system and sales report.",
+            "id":6,
+            "info":"Backend Developer",
+            "time":"01-Sep-2008 / 01-Jan-2014",
+            "title":"IHAC"
+         },
+         {
+            "description":"Initiate developer career as PHP Junior developer. Created websites for clients belonged to the company on many business areas.",
+            "id":7,
+            "info":"Php Developer",
+            "time":"01-May-2007 / 01-Aug-2008",
+            "title":"MacWin"
+         },
+         {
+            "description":"Passion to learn, contribute and create side projects. Open sourcer.",
+            "id":8,
+            "info":"Enthusiastic, contributor and creator",
+            "time":"Until now",
+            "title":"Open Source"
+         }
+      ]
+   }
+}

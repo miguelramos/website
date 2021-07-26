@@ -1,0 +1,30 @@
+@layer components {
+  .ui-card {
+    @apply flex flex-col p-4 text-white;
+    background-color: var(--ui-color-black-one);
+  }
+
+  .ui-card__head {
+    @apply flex flex-row justify-between mb-4;
+  }
+
+  .ui-card__title {
+    @apply text-lg font-bold;
+  }
+
+  .ui-card__info {
+    @apply text-sm italic;
+    color:  var(--ui-color-gray);
+  }
+
+  .ui-card__date {
+    @apply text-xs py-0.5 px-4 rounded-xl inline-block max-h-5;
+    background-color: var(--ui-color-black);
+    color: var(--ui-color-gray);
+  }
+
+  .ui-card__description {
+    @apply text-lg;
+    color: var(--ui-color-gray);
+  }
+}

@@ -3,8 +3,8 @@
   "license": "MIT",
   "version": "0.0.2",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "start": "vite",
+    "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint --ext .ts,.tsx --fix --max-warnings 0 ."
   },

@@ -1,0 +1,56 @@
+@layer components {
+  .ui-window {
+    @apply flex flex-col md:flex-row h-full p-2;
+  }
+
+  .ui-window::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: theme('margin.2');
+    background: var(--ui-color-black);
+    z-index: 9999;
+  }
+
+  .ui-window::after {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: auto;
+    bottom:  0;
+    width: 100%;
+    height: theme('margin.2');
+    background: var(--ui-color-black);
+    z-index: 9999;
+  }
+
+  .ui-check {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: var(--ui-check-height);
+    width: var(--ui-check-width);
+    border-bottom: var(--ui-check-border-width) solid var(--ui-check-border-color);
+    border-right: var(--ui-check-border-width) solid var(--ui-check-border-color);
+  }
+
+  .ui-body {
+    @apply container md:pl-2;
+  }
+
+  .ui-body__container {
+    @apply w-full h-full overflow-hidden overflow-y-scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+
+  .ui-body__container::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+  }
+
+  .ui-resume {
+    @apply grid grid-flow-row grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 gap-4;
+  }
+}

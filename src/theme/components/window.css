@@ -1,5 +1,0 @@
-@layer components {
-  .ui-window {
-    @apply flex h-full;
-  }
-}

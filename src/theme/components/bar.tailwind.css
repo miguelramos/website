@@ -1,0 +1,17 @@
+@layer components {
+	.ui-bar {
+		@apply w-full hidden md:block;
+	}
+
+	.ui-bar__container {
+		@apply text-xl text-white flex justify-between py-4;
+	}
+
+	.ui-bar__years {
+		@apply text-yellow-400 font-bold;
+	}
+
+	.ui-bar__label {
+		@apply text-sm;
+	}
+}

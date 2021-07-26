@@ -25,5 +25,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     @apply h-screen;
+    background-color:  var(--ui-color-black);
   }
 }

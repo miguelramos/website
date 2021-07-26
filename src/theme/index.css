@@ -1,3 +1,12 @@
 @import "./base.css";
 
-@import "./components/window.css";
+@import "./components/window.tailwind.css";
+@import "./components/sidebar.tailwind.css";
+@import "./components/avatar.tailwind.css";
+@import "./components/circular.tailwind.css";
+@import "./components/linear.tailwind.css";
+@import "./components/icons.tailwind.css";
+@import "./components/hero.tailwind.css";
+@import "./components/bar.tailwind.css";
+@import "./components/card.tailwind.css";
+@import "./components/loading.tailwind.css";

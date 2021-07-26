@@ -1,0 +1,10 @@
+@layer components {
+  .ui-icon {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    color: currentColor;
+  }
+}
