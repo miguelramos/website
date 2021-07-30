@@ -1,0 +1,76 @@
+@layer components {
+  .ui-sidebar {
+    @apply mb-4 sm:mb-0 sm:w-64 sm:h-full sm:absolute sm:relative shadow flex-col justify-between sm:flex;
+
+    background-color: var(--ui-color-black-one);
+  }
+
+  .ui-sidebar__content {
+    @apply flex flex-1 flex-col overflow-hidden overflow-y-scroll p-4;
+    color:  var(--ui-color-gray);
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+
+  .ui-sidebar__content::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+  }
+
+  .ui-sidebar__person,
+  .ui-sidebar__lang,
+  .ui-sidebar__skill,
+  .ui-sidebar__knowledge {
+    @apply border-b border-solid w-full pb-8;
+    border-bottom-color: var(--ui-color-gray-two);
+  }
+
+  .ui-sidebar__person-item,
+  .ui-skill__info {
+    @apply flex flex-1 justify-between;
+  }
+
+  .ui-sidebar__person-item p:first-child {
+    @apply text-white;
+  }
+
+  .ui-sidebar__lang-title,
+  .ui-sidebar__skill-title,
+  .ui-sidebar__knowledge-title {
+    @apply py-4 text-white text-lg;
+  }
+
+  .ui-sidebar__lang-list {
+    @apply flex flex-row justify-around;
+  }
+
+  .ui-sidebar__lang-item {
+    @apply flex items-center flex-col;
+  }
+
+  .ui-sidebar__lang-item p:last-child {
+    @apply text-white pt-4;
+  }
+
+  .ui-skill__info {
+    @apply flex
+  }
+
+  .ui-sidebar__knowledge-item {
+    @apply flex items-center;
+  }
+
+  .ui-sidebar__knowledge-item > span {
+    @apply ml-2 text-sm;
+  }
+
+  .ui-sidebar__download {
+    @apply py-4 text-white text-sm font-bold;
+  }
+
+  .ui-sidebar__footer {
+    @apply flex bg-nigth-800 items-center justify-around;
+    min-height: theme('height.12');
+    color:  var(--ui-color-gray);
+  }
+}

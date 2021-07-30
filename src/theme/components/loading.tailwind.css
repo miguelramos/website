@@ -1,0 +1,51 @@
+@layer components {
+	.ui-loading {
+		@apply absolute inset-0 flex flex-col items-center justify-center;
+		background-color: var(--ui-color-black-one);
+	}
+
+	.ui-loading__error {
+		@apply text-lg text-white;
+	}
+
+	.ui-ring {
+	  display: inline-block;
+	  position: relative;
+	  width: 80px;
+	  height: 80px;
+	}
+
+	.ui-ring div {
+	  box-sizing: border-box;
+	  display: block;
+	  position: absolute;
+	  width: 64px;
+	  height: 64px;
+	  margin: 8px;
+	  border: 8px solid #fcf;
+	  border-radius: 50%;
+	  animation: ui-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	  border-color: #fcf transparent transparent transparent;
+	}
+
+	.ui-ring div:nth-child(1) {
+	  animation-delay: -0.45s;
+	}
+
+	.ui-ring div:nth-child(2) {
+	  animation-delay: -0.3s;
+	}
+
+	.ui-ring div:nth-child(3) {
+	  animation-delay: -0.15s;
+	}
+
+	@keyframes ui-ring {
+	  0% {
+	    transform: rotate(0deg);
+	  }
+	  100% {
+	    transform: rotate(360deg);
+	  }
+	}
+}

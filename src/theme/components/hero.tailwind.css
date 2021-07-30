@@ -1,0 +1,44 @@
+@layer components {
+	.ui-hero {
+		min-height: 300px;
+		background-image: url('/assets/screen.jpg');
+		@apply hidden bg-no-repeat bg-center bg-cover bg-opacity-50 relative md:block;
+	}
+
+	.ui-hero__container {
+		@apply h-full border-8 border-solid backdrop-filter backdrop-blur-3xl backdrop-grayscale backdrop-opacity-60 absolute inset-0 p-4;
+		@apply items-center flex flex-row text-white justify-center;
+		border-color: var(--ui-color-black-one);
+	}
+
+	.ui-hero__container-title {
+		@apply text-xl xl:text-5xl text-white;
+	}
+	.ui-hero__container-info {
+		@apply text-sm md:text-xl text-white;
+	}
+	.ui-hero__container-description {
+		@apply text-sm md:text-lg text-white text-yellow-400;
+	}
+
+	.ui-hero__left,
+	.ui-hero__right {
+		width: 50%;
+	}
+
+	.ui-hero__right {
+		@apply mr-1 md:mr-8 flex flex-col items-end;
+	}
+
+	.ui-hero__left {
+		@apply ml-1 md:ml-8;
+	}
+
+	.ui-hero__code {
+		@apply text-yellow-400;
+	}
+
+	.ui-hero__writer {
+		@apply md:text-lg;
+	}
+}

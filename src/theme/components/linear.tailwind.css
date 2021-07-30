@@ -1,0 +1,23 @@
+@layer components {
+	.ui-linear {
+		background: var(--ui-color-black);
+		justify-content: flex-start;
+		position: relative;
+		height: var(--ui-linear-height);
+
+		@apply w-full flex items-center my-2;
+	}
+
+	.ui-linear__progress {
+		animation: fill-progress 3s normal forwards;
+		background: var(--ui-color-warning);
+		height: var(--ui-linear-height);
+		width: var(--ui-linear-amount);
+	}
+
+	@keyframes fill-progress {
+		0% {
+			width: 0;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@layer components {
+  .ui-avatar {
+    @apply border-2 border-white inline object-cover w-32 h-32 rounded-full;
+  }
+
+  .ui-avatar__content {
+    @apply w-32 relative inline-block;
+  }
+
+  .ui-avatar__badge {
+    @apply absolute bottom-0 right-8 inline-block w-3 h-3 bg-green-600 border-2 border-white rounded-full;
+  }
+
+  .ui-avatar__container {
+    @apply container flex flex-col justify-center items-center py-10;
+    background-color: var(--ui-color-black-two);
+  }
+
+  .ui-avatar__name {
+    @apply text-lg font-bold mt-4;
+    color:  var(--ui-color-white);
+  }
+
+  .ui-avatar__title {
+    @apply text-sm;
+    color:  var(--ui-color-gray);
+  }
+}
