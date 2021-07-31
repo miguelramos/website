@@ -3,7 +3,7 @@
       "personal": {
          "avatar": "/assets/me.png",
          "name": "Miguel Ramos",
-         "title": "Web Developer",
+         "title": "Software Engineer",
          "sentence": "Javascript, typescript and Go"
       },
       "contacts": [
@@ -141,7 +141,7 @@
          "title":"Knowledge"
       },
       "hero":{
-         "description":"Web developer",
+         "description":"My developer career",
          "info":"Welcome to my website",
          "sentences":[
             "I Love to Develop.",
