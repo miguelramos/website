@@ -177,10 +177,17 @@
       ],
       "resume":[
          {
+            "description":"Senior javascript developer, frontend developer in products.",
+            "id":1,
+            "info":"Senior Frontend Developer",
+            "time":"01-Mar-2022 / Until now",
+            "title":"MB.io(Mercedes-Benz)"
+         },
+         {
             "description":"Senior javascript developer, focus in internal tools. Practices implementations, tooling and frontend development in internal products.",
             "id":1,
             "info":"Senior Frontend Developer",
-            "time":"01-May-2020 / Until now",
+            "time":"01-May-2020 / 25-Fev-2022",
             "title":"Prozis"
          },
          {
