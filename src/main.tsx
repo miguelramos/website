@@ -3,11 +3,8 @@ import './theme/index.css';
 import React from 'react';
 
 import { HomePage } from '@/scenes';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <HomePage />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const container = document.getElementById('root');
+const root = createRoot(container!);
+root.render(<React.StrictMode><HomePage /></React.StrictMode>);

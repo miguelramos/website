@@ -1,5 +1,5 @@
 import reactRefresh from '@vitejs/plugin-react-refresh';
-import { join, resolve } from 'path';
+import { join, resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
 const root = resolve(__dirname);

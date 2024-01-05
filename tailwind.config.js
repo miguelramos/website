@@ -2,11 +2,7 @@ module.exports = {
   darkMode: 'class',
   // mode: 'jit',
   plugins: [],
-  purge: {
-    content: ['./index.html', './src/**/*.tsx', './src/**/*.ts'],
-    enabled: process.env.NODE_ENV === 'production',
-    safeList: []
-  },
+  content: ['./index.html', './src/**/*.tsx', './src/**/*.ts'],
   theme: {
     extend: {
       colors: {
