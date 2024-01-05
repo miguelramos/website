@@ -89,9 +89,9 @@
                "label":"Html"
             },
             {
-               "amount":20,
+               "amount":60,
                "id":5,
-               "label":"Go (Learning)"
+               "label":"Go"
             },
             {
                "amount":75,
@@ -107,6 +107,11 @@
                "amount":85,
                "id":8,
                "label":"Nodejs"
+            },
+            {
+               "amount":5,
+               "id":9,
+               "label":"Rust"
             }
          ],
          "title":"Coding"
@@ -177,7 +182,7 @@
       ],
       "resume":[
          {
-            "description":"Senior javascript developer, frontend developer in products.",
+            "description":"Senior javascript developer in services team, auth system and microfrontends.",
             "id":1,
             "info":"Senior Frontend Developer",
             "time":"01-Mar-2022 / Until now",
@@ -185,56 +190,56 @@
          },
          {
             "description":"Senior javascript developer, focus in internal tools. Practices implementations, tooling and frontend development in internal products.",
-            "id":1,
+            "id":2,
             "info":"Senior Frontend Developer",
             "time":"01-May-2020 / 25-Fev-2022",
             "title":"Prozis"
          },
          {
             "description":"Developed electron application for IPVC. Leadership and management team. Mentoring sessions and company methodologies definition.",
-            "id":2,
+            "id":3,
             "info":"Senior Leader",
             "time":"01-Aug-2018 / 01-April-2020",
             "title":"Untile (NQDA)"
          },
          {
             "description":"Startup from day one, build and conceptualization of all product application on frontend.",
-            "id":3,
+            "id":4,
             "info":"Team Leader Developer",
             "time":"01-Oct-2016 / 01-July-2018",
             "title":"Foursource"
          },
          {
             "description":"Here started as Python developer to refactor processes. Build rest application for A/B testing on referal Ads. Jumped to team leader for frontend team building the new platform",
-            "id":4,
+            "id":5,
             "info":"Team Leader Developer",
             "time":"01-Apr-2015 / 01-Aug-2016",
             "title":"Yeldify"
          },
          {
             "description":"Edigma created arts rest platform on PHP and also frontend. Several shopping carts. Milenium publicity system and internal application to report time tracking.",
-            "id":5,
+            "id":6,
             "info":"Full Stack Developer",
             "time":"01-Feb-2014 / 01-Feb-2015",
             "title":"Edigma"
          },
          {
             "description":"On IHAC Institue developed several web applications in PHP like: documents organization search by year, localization, name, type, etc. Also museum presentation system, ticket system and sales report.",
-            "id":6,
+            "id":7,
             "info":"Backend Developer",
             "time":"01-Sep-2008 / 01-Jan-2014",
             "title":"IHAC"
          },
          {
             "description":"Initiate developer career as PHP Junior developer. Created websites for clients belonged to the company on many business areas.",
-            "id":7,
+            "id":8,
             "info":"Php Developer",
             "time":"01-May-2007 / 01-Aug-2008",
             "title":"MacWin"
          },
          {
             "description":"Passion to learn, contribute and create side projects. Open sourcer.",
-            "id":8,
+            "id":9,
             "info":"Enthusiastic, contributor and creator",
             "time":"Until now",
             "title":"Open Source"
