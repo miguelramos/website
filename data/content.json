@@ -3,32 +3,32 @@
       "personal": {
          "avatar": "/assets/me.png",
          "name": "Miguel Ramos",
-         "title": "Software Engineer",
-         "sentence": "Javascript, typescript and Go"
+         "title": "Software & AI Engineer",
+         "sentence": "JavaScript, TypeScript and Rust"
       },
       "contacts": [
          {
             "id": 1,
             "link": "https://github.com/miguelramos",
-            "title": "Github link",
+            "title": "GitHub profile",
             "icon": "/assets/icons/github.svg"
          },
          {
             "id": 2,
             "link": "https://www.linkedin.com/in/miguelmarquesramos",
-            "title": "Linkedin link",
+            "title": "LinkedIn profile",
             "icon": "/assets/icons/linkedin.svg"
          },
          {
             "id": 3,
             "link": "https://twitter.com/miguelonspring",
-            "title": "Twitter link",
+            "title": "Twitter profile",
             "icon": "/assets/icons/twitter.svg"
          },
          {
             "id": 4,
             "link": "mailto:hello@miguelramos.dev",
-            "title": "Mail link",
+            "title": "Send an email",
             "icon": "/assets/icons/mail.svg"
          }
       ],
@@ -46,7 +46,7 @@
          {
             "id":3,
             "label":"Age",
-            "value":"44"
+            "value":"49"
          }
       ],
       "languages":{
@@ -71,22 +71,22 @@
             {
                "amount":80,
                "id":1,
-               "label":"Typescript"
+               "label":"TypeScript"
             },
             {
                "amount":85,
                "id":2,
-               "label":"Javascript"
+               "label":"JavaScript"
             },
             {
                "amount":80,
                "id":3,
-               "label":"Css"
+               "label":"CSS"
             },
             {
                "amount":80,
                "id":4,
-               "label":"Html"
+               "label":"HTML"
             },
             {
                "amount":60,
@@ -101,15 +101,15 @@
             {
                "amount":60,
                "id":7,
-               "label":"Sql"
+               "label":"SQL"
             },
             {
                "amount":85,
                "id":8,
-               "label":"Nodejs"
+               "label":"Node.js"
             },
             {
-               "amount":5,
+               "amount":55,
                "id":9,
                "label":"Rust"
             }
@@ -127,11 +127,11 @@
                "id":2
             },
             {
-               "description":"Nestjs, Express, Lodash",
+               "description":"NestJS, Express, Lodash",
                "id":3
             },
             {
-               "description":"Tailwind, Scss, Bulma",
+               "description":"Tailwind, SCSS, Bulma",
                "id":4
             },
             {
@@ -146,27 +146,27 @@
          "title":"Knowledge"
       },
       "hero":{
-         "description":"My developer career",
+         "description":"My software engineering journey",
          "info":"Welcome to my website",
          "sentences":[
-            "I Love to Develop.",
+            "I love building software.",
             "Creating products and solutions.",
-            "Team player and open mind.",
-            "Mentoring, learning and grow.",
-            "Self-taught, humble and always ready to learn.",
-            "Open source enthusiastic, contributor and creator."
+            "Team player with an open mind.",
+            "Mentoring, learning and growing.",
+            "Self-taught, humble and always eager to learn.",
+            "Open-source enthusiast, contributor and creator."
          ],
-         "title":"Hello, i'm Miguel Ramos"
+         "title":"Hello, I'm Miguel Ramos"
       },
       "experience":[
          {
             "id":1,
-            "label":"Years Experience",
-            "year":"14+"
+            "label":"Years of Experience",
+            "year":"19+"
          },
          {
             "id":2,
-            "label":"Products Builded",
+            "label":"Products Built",
             "year":"10+"
          },
          {
@@ -182,66 +182,79 @@
       ],
       "resume":[
          {
-            "description":"Senior javascript developer in services team, auth system and microfrontends.",
+            "description":"Moved from frontend into AI engineering, designing and building AI-powered features and tools while drawing on years of product and web engineering experience.",
             "id":1,
-            "info":"Senior Frontend Developer",
-            "time":"01-Mar-2022 / Until now",
-            "title":"MB.io(Mercedes-Benz)"
+            "info":"AI Engineer",
+            "time":"Present",
+            "title":"Mercedes-Benz.io"
          },
          {
-            "description":"Senior javascript developer, focus in internal tools. Practices implementations, tooling and frontend development in internal products.",
+            "description":"Joined the services team to build the authentication system and microfrontends, then moved to the warranty product team. This path led to my transition into AI engineering.",
             "id":2,
             "info":"Senior Frontend Developer",
-            "time":"01-May-2020 / 25-Fev-2022",
+            "time":"Mar 2022 – Present",
+            "title":"Mercedes-Benz.io"
+         },
+         {
+            "description":"Senior JavaScript developer focused on internal tools: engineering practices, tooling and frontend development for internal products.",
+            "id":3,
+            "info":"Senior Frontend Developer",
+            "time":"May 2020 – Feb 2022",
             "title":"Prozis"
          },
          {
-            "description":"Developed electron application for IPVC. Leadership and management team. Mentoring sessions and company methodologies definition.",
-            "id":3,
+            "description":"Developed an Electron application for IPVC. Led and managed the team, ran mentoring sessions and defined the company's development methodologies.",
+            "id":4,
             "info":"Senior Leader",
-            "time":"01-Aug-2018 / 01-April-2020",
+            "time":"Aug 2018 – Apr 2020",
             "title":"Untile (NQDA)"
          },
          {
-            "description":"Startup from day one, build and conceptualization of all product application on frontend.",
-            "id":4,
-            "info":"Team Leader Developer",
-            "time":"01-Oct-2016 / 01-July-2018",
+            "description":"Joined the startup on day one and conceived and built the entire frontend of the product.",
+            "id":5,
+            "info":"Development Team Lead",
+            "time":"Oct 2016 – Jul 2018",
             "title":"Foursource"
          },
          {
-            "description":"Here started as Python developer to refactor processes. Build rest application for A/B testing on referal Ads. Jumped to team leader for frontend team building the new platform",
-            "id":5,
-            "info":"Team Leader Developer",
-            "time":"01-Apr-2015 / 01-Aug-2016",
+            "description":"Started as a Python developer refactoring internal processes and built a REST application for A/B testing referral ads. Later became frontend team lead, building the new platform.",
+            "id":6,
+            "info":"Development Team Lead",
+            "time":"Apr 2015 – Aug 2016",
             "title":"Yeldify"
          },
          {
-            "description":"Edigma created arts rest platform on PHP and also frontend. Several shopping carts. Milenium publicity system and internal application to report time tracking.",
-            "id":6,
-            "info":"Full Stack Developer",
-            "time":"01-Feb-2014 / 01-Feb-2015",
+            "description":"Built a REST platform for the arts in PHP, along with its frontend, several shopping carts, the Millennium advertising system and an internal time-tracking and reporting application.",
+            "id":7,
+            "info":"Full-Stack Developer",
+            "time":"Feb 2014 – Feb 2015",
             "title":"Edigma"
          },
          {
-            "description":"On IHAC Institue developed several web applications in PHP like: documents organization search by year, localization, name, type, etc. Also museum presentation system, ticket system and sales report.",
-            "id":7,
+            "description":"Developed several PHP web applications for the IHAC institute: a document archive searchable by year, location, name and type, a museum presentation system, a ticketing system and sales reporting.",
+            "id":8,
             "info":"Backend Developer",
-            "time":"01-Sep-2008 / 01-Jan-2014",
+            "time":"Sep 2008 – Jan 2014",
             "title":"IHAC"
          },
          {
-            "description":"Initiate developer career as PHP Junior developer. Created websites for clients belonged to the company on many business areas.",
-            "id":8,
-            "info":"Php Developer",
-            "time":"01-May-2007 / 01-Aug-2008",
+            "description":"Started my career as a junior PHP developer, building websites for the company's clients across many industries.",
+            "id":9,
+            "info":"PHP Developer",
+            "time":"May 2007 – Aug 2008",
             "title":"MacWin"
          },
          {
-            "description":"Passion to learn, contribute and create side projects. Open sourcer.",
-            "id":9,
-            "info":"Enthusiastic, contributor and creator",
-            "time":"Until now",
+            "description":"Passionate about learning, contributing and building side projects. Through my WebSublime organization I publish UI components, CLI tools and AI developer tooling.",
+            "id":10,
+            "info":"Enthusiast, contributor and creator",
+            "links":[
+               {
+                  "link":"https://github.com/websublime",
+                  "title":"github.com/websublime"
+               }
+            ],
+            "time":"Ongoing",
             "title":"Open Source"
          }
       ]
