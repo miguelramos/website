@@ -1,8 +1,8 @@
-import React from 'react';
+import type { JSX } from 'react';
 
 import { CardProps } from './types';
 
-function Card({ description, info, time, title }: CardProps): JSX.Element {
+function Card({ description, info, links, time, title }: CardProps): JSX.Element {
   return (
     <div className={'ui-card'}>
       <header className={'ui-card__head'}>
@@ -15,6 +15,16 @@ function Card({ description, info, time, title }: CardProps): JSX.Element {
       </header>
 
       <article className={'ui-card__description'}>{ description }</article>
+
+      { links && links.length > 0 && (
+        <footer className={'ui-card__links'}>
+          {
+            links.map(({ link, title: label }) => (
+              <a key={link} className={'ui-card__link'} href={link}>{label}</a>
+            ))
+          }
+        </footer>
+      )}
     </div>
   );
 }

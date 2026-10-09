@@ -2,11 +2,11 @@
 	.ui-hero {
 		min-height: 300px;
 		background-image: url('/assets/screen.jpg');
-		@apply hidden bg-no-repeat bg-center bg-cover bg-opacity-50 relative md:block;
+		@apply hidden bg-no-repeat bg-center bg-cover relative md:block;
 	}
 
 	.ui-hero__container {
-		@apply h-full border-8 border-solid backdrop-filter backdrop-blur-3xl backdrop-grayscale backdrop-opacity-60 absolute inset-0 p-4;
+		@apply h-full border-8 border-solid backdrop-blur-3xl backdrop-grayscale backdrop-opacity-60 absolute inset-0 p-4;
 		@apply items-center flex flex-row text-white justify-center;
 		border-color: var(--ui-color-black-one);
 	}

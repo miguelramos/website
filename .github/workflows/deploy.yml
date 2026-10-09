@@ -10,7 +10,6 @@ on:
 
 env:
   CI: true
-  PNPM_CACHE_FOLDER: .pnpm-store
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -20,32 +19,31 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x] # We will deploy with only one version of node
+        node-version: [24.x] # We will deploy with only one version of node (current LTS)
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
+
+      # Installs the pnpm version pinned in package.json "packageManager"
+      - name: Install pnpm package manager
+        uses: pnpm/action-setup@v6
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: Install pnpm package manager
-        run: npm i pnpm@latest -g
-
-      - name: Setup pnpm config
-        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+          cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         run: pnpm build
 
       - name: deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./dist

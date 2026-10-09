@@ -1,4 +1,4 @@
-import React from 'react';
+import type { JSX } from 'react';
 
 import { Linear } from '@/common/components';
 

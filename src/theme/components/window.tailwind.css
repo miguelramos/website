@@ -9,7 +9,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: theme('margin.2');
+    height: calc(var(--spacing) * 2);
     background: var(--ui-color-black);
     z-index: 9999;
   }
@@ -21,7 +21,7 @@
     top: auto;
     bottom:  0;
     width: 100%;
-    height: theme('margin.2');
+    height: calc(var(--spacing) * 2);
     background: var(--ui-color-black);
     z-index: 9999;
   }

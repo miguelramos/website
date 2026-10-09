@@ -1,21 +1,28 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect, useState } from 'react';
+import { type JSX, useEffect, useState } from 'react';
 
 import { Bar, Body, Contact, Hero, Resume, Sidebar, Suspense } from '@/common/compositions';
+
+import type { Content } from './types';
+
+type Model = {
+  data: Content | null;
+  hasError: boolean;
+  isLoading: boolean;
+};
 
 /**
  * Homepage scene
  */
 
 export default function HomePage(): JSX.Element {
-  const [model, setState] = useState<{data: any; hasError: boolean; isLoading: boolean}>({ data: {}, hasError: false, isLoading: true });
+  const [model, setModel] = useState<Model>({ data: null, hasError: false, isLoading: true });
 
   const fetchData = async () => {
     const response = await fetch('/data/content.json');
 
     await response.json()
-      .then(({ data }) => setState({ data, hasError: false, isLoading: false }))
-      .catch(() => setState({ data: {}, hasError: true, isLoading: true }));
+      .then(({ data }: { data: Content }) => setModel({ data, hasError: false, isLoading: false }))
+      .catch(() => setModel({ data: null, hasError: true, isLoading: true }));
   };
 
   useEffect(() => {
@@ -24,9 +31,9 @@ export default function HomePage(): JSX.Element {
 
   return (
     <>
-      { 
-        model.isLoading
-          ? <Suspense hasError={model.hasError} /> 
+      {
+        model.isLoading || !model.data
+          ? <Suspense hasError={model.hasError} />
           : (
             <>
               <Sidebar>
@@ -44,12 +51,8 @@ export default function HomePage(): JSX.Element {
                   <Sidebar.Language languages={model.data.languages.collection} title={model.data.languages.title} />
 
                   <Sidebar.Skill skills={model.data.skills.collection} title={model.data.skills.title} />
-          
-                  <Sidebar.Knowledge items={model.data.knowledge.collection} title={model.data.knowledge.title} />
 
-                  <a className={'ui-sidebar__download'} href={'/assets/data/cv-miguel-ramos.zip'}>
-                    <span>Download CV</span> <img alt={'Donwload cv'} className={'ui-icon'} src={'/assets/icons/download.svg'} />
-                  </a>
+                  <Sidebar.Knowledge items={model.data.knowledge.collection} title={model.data.knowledge.title} />
                 </Sidebar.Content>
 
                 <Sidebar.Footer>
@@ -67,7 +70,7 @@ export default function HomePage(): JSX.Element {
                 </Body.Container>
               </Body>
             </>
-          ) 
+          )
       }
     </>
   );

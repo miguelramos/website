@@ -1,13 +1,13 @@
 export type Experience = {
-	id: number;
-	year: number|string;
-	label: string;
-}
+  id: number;
+  year: number | string;
+  label: string;
+};
 
 export type BarProps = {
-	experiences: Experience[];
-}
+  experiences: Experience[];
+};
 
 export type BarListProps = {
-	list: Experience[];
-}
+  list: Experience[];
+};

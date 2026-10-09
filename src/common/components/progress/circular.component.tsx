@@ -1,4 +1,4 @@
-import React from 'react';
+import type { CSSProperties, JSX } from 'react';
 
 import { CircularProps } from './types';
 
@@ -20,7 +20,7 @@ function Circular({
     '--ui-circular-font-size': `${fontSize}rem`,
     '--ui-circular-height': `${height}px`,
     '--ui-circular-width': `${width}px`
-  };
+  } as CSSProperties;
 
   return (
     <div className={'ui-circular'} style={styleProps}>

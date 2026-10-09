@@ -27,4 +27,13 @@
     @apply text-lg;
     color: var(--ui-color-gray);
   }
+
+  .ui-card__links {
+    @apply mt-auto pt-4 flex flex-wrap gap-x-4 text-sm font-bold;
+  }
+
+  .ui-card__link {
+    @apply hover:underline;
+    color: var(--ui-color-warning);
+  }
 }

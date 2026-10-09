@@ -1,6 +1,6 @@
 @layer components {
   .ui-sidebar {
-    @apply mb-4 sm:mb-0 sm:w-64 sm:h-full sm:absolute sm:relative shadow flex-col justify-between sm:flex;
+    @apply mb-4 sm:mb-0 sm:w-64 sm:h-full sm:absolute sm:relative shadow-sm flex-col justify-between sm:flex;
 
     background-color: var(--ui-color-black-one);
   }
@@ -64,13 +64,9 @@
     @apply ml-2 text-sm;
   }
 
-  .ui-sidebar__download {
-    @apply py-4 text-white text-sm font-bold;
-  }
-
   .ui-sidebar__footer {
     @apply flex bg-nigth-800 items-center justify-around;
-    min-height: theme('height.12');
+    min-height: calc(var(--spacing) * 12);
     color:  var(--ui-color-gray);
   }
 }

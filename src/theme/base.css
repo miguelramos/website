@@ -1,7 +1,14 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss" source(none);
 @import "./variables.css";
+
+@source "../../index.html";
+@source "..";
+
+@theme {
+  --color-black: #191923;
+  --color-nigth-800: #23232dfa;
+  --color-nigth-900: #20212a;
+}
 
 @layer base {
   h1 {

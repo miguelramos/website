@@ -1,4 +1,4 @@
-import React from 'react';
+import type { JSX } from 'react';
 
 import { SidebarAvatar } from './sidebar-avatar.component';
 import { SidebarContent } from './sidebar-content.component';

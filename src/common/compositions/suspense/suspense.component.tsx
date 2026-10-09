@@ -1,4 +1,4 @@
-import React from 'react';
+import type { JSX } from 'react';
 
 export function Suspense({hasError = false}: { hasError: boolean }): JSX.Element {
   return (

@@ -1,4 +1,4 @@
-import React from 'react';
+import type { JSX } from 'react';
 
 import { Card } from '@/common/components';
 
@@ -8,8 +8,8 @@ function CardList({ list = [] }: ResumeListProps): JSX.Element {
   return (
     <>
       {
-        list && list.map(({ description, id, info, time, title }) => (
-          <Card key={id} description={description} info={info} time={time} title={title} />
+        list && list.map(({ description, id, info, links, time, title }) => (
+          <Card key={id} description={description} info={info} links={links} time={time} title={title} />
         ))
       }
     </>

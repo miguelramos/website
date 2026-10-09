@@ -1,4 +1,4 @@
-import React from 'react';
+import type { JSX } from 'react';
 
 import { BodyContainer } from './body-container.component';
 import { BodyProps } from './types';

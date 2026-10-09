@@ -1,7 +1,12 @@
+export type CardLink = {
+  link: string;
+  title: string;
+};
+
 export type CardProps = {
-	title: string;
+  title: string;
   info?: string;
-	description: string;
-	time?: string;
-	links?: string[];
+  description: string;
+  time?: string;
+  links?: CardLink[];
 };
